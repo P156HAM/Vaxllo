@@ -1,0 +1,44 @@
+# Node
+node_modules/
+dist/
+.env
+
+# React / Frontend
+Vaxllo/node_modules/
+Vaxllo/dist/
+Vaxllo/.env
+Vaxllo/.next
+Vaxllo/.expo
+Vaxllo/web-build
+Vaxllo/.expo-shared
+Vaxllo/package-lock.json
+Vaxllo/.cursor/
+Vaxllo/ios/
+Vaxllo/android/
+Vaxllo/web/
+Vaxllo/windows/
+Vaxllo/macos/
+Vaxllo/linux/
+Vaxllo/ios/
+
+# Backend / Backend
+Backend/node_modules/
+Backend/dist/
+Backend/.env
+Backend/package-lock.json
+Backend/vaxllo-8d44f3a169ad.json
+
+
+# macOS
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode
+.vscode/
+
+# Others
+*.log
