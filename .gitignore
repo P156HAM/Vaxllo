@@ -28,6 +28,8 @@ Backend/.env
 Backend/package-lock.json
 Backend/vaxllo-8d44f3a169ad.json
 
+Backend/.env
+Backend/vaxllo-8d44f3a169ad.json
 
 # macOS
 .DS_Store
