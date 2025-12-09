@@ -1,7 +1,7 @@
 [build]
-  base = "vaxllo-web"
-  command = "cd vaxllo-web && npm install && npm run build"
-  publish = "vaxllo-web/dist"
+  base = "vaxllo/vaxllo-web"
+  command = "npm install && npm run build"
+  publish = "vaxllo/vaxllo-web/dist"
 
 [build.environment]
   NODE_VERSION = "18"
