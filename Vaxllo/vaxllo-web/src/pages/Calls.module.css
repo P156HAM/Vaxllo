@@ -1,0 +1,289 @@
+.container {
+  flex: 1;
+  background-color: #f8fafc;
+  overflow-y: auto;
+}
+
+.header {
+  padding: 24px;
+  padding-bottom: 16px;
+}
+
+.searchSection {
+  display: flex;
+  gap: 12px;
+  padding: 0 24px 16px 24px;
+}
+
+.searchContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffffff;
+  border: 1px solid #e1e5e9;
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #0f172a;
+  background: transparent;
+}
+
+.searchInput::placeholder {
+  color: #64748b;
+}
+
+.filterButton {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #e1e5e9;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filterButton:hover {
+  background-color: #f8fafc;
+  border-color: #2563eb;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  padding: 0 24px 16px 24px;
+  flex-wrap: wrap;
+}
+
+.filterChip {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #e1e5e9;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: capitalize;
+}
+
+.filterChip:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.filterChip.active {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.filterBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 8px;
+  text-transform: capitalize;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  color: #64748b;
+}
+
+.clearButton {
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #2563eb;
+  background-color: #ffffff;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clearButton:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.headerInfo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.callCount {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.list {
+  padding: 0 24px 24px 24px;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 24px;
+}
+
+.modalContainer {
+  background-color: #ffffff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.modalTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.modalSubtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin: 4px 0 0 0;
+}
+
+.closeButton {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: rgba(225, 229, 233, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.closeButton:hover {
+  background-color: rgba(225, 229, 233, 0.6);
+}
+
+.modalContent {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.conversation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.message {
+  padding: 16px;
+  border-radius: 16px;
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.aiMessage {
+  background-color: #2563eb;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+.callerMessage {
+  background-color: rgba(225, 229, 233, 0.5);
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.messageText {
+  font-size: 16px;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+  line-height: 20px;
+}
+
+.aiMessageText {
+  color: #ffffff;
+}
+
+.messageTime {
+  font-size: 14px;
+  color: #64748b;
+  align-self: flex-end;
+}
+
+.aiMessageTime {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 768px) {
+  .header,
+  .list {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
